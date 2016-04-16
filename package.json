@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typings": "typings",
+    "build": "tsc",
+    "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Nance",
   "license": "ISC",
   "dependencies": {
     "raml-1-parser": "^0.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12"
   }
 }
