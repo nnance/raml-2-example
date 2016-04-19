@@ -1,12 +1,13 @@
 {
   "name": "raml-2-example",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Example TypeScript project that uses the RAML 2 parser in TypeScript",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "typings": "typings",
     "build": "npm run clean && tsc",
+    "dev": "nodemon dist/index.js",
     "watch": "tsc --watch",
     "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +18,7 @@
     "raml-1-parser": "^0.2.1"
   },
   "devDependencies": {
+    "nodemon": "^1.9.1",
     "rimraf": "^2.5.2",
     "typescript": "^1.8.10",
     "typings": "^0.7.12"
