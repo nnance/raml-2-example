@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist",
     "typings": "typings",
-    "build": "tsc",
+    "build": "npm run clean && tsc",
     "watch": "tsc --watch",
+    "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nick Nance",
@@ -15,6 +17,7 @@
     "raml-1-parser": "^0.2.1"
   },
   "devDependencies": {
+    "rimraf": "^2.5.2",
     "typescript": "^1.8.10",
     "typings": "^0.7.12"
   }
