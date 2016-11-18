@@ -35,9 +35,10 @@ types:
       shade: string
   Food:
     type: object
-    discriminator: true
+    discriminator: kind
     properties:
       name: string
+      kind: string
       calories: integer
       isVegetarian: boolean
       weight: number
@@ -54,8 +55,8 @@ types:
       sex: lib.Sex
       legs: Legs
       bodyfatPercentage:
-          type: number
-          enum: [ 0.0, 0.5, 1.0 ]
+        type: number
+        enum: [ 0, 5, 10 ]
       nailsPerPaw: number[]
 
 resourceTypes:

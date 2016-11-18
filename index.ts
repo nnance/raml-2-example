@@ -1,4 +1,3 @@
-/// <reference path="typings/main/ambient/node/index.d.ts" />
 import * as path from "path"
 import { loadApi, api10 as API } from "raml-1-parser"
 
